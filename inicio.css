@@ -1,0 +1,422 @@
+*{
+ margin    : 0;
+ padding   : 0;
+ box-sizing: border-box;
+ font-family: 'Noto Sans JP', sans-serif;
+}
+
+/*cabecera*/
+.logo{
+  height: 20px;
+  background-color: #000;
+  display: block;
+}
+
+.logo img {
+  height: 100px;
+  position:static;
+}
+
+.cabecera{
+  height: 500px;
+  background-image: url("img/cabecera.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cabecera-caja{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20%px;
+  width: 80%;
+  background-color:#ffffffb3; 
+  border-radius:30px;
+}
+
+h1{
+  font-size: 35px;
+  height: 100%;
+  width: 90%;
+  color: #000;
+  text-align: center;
+}
+
+/*menu app*/
+.header{
+  height       : 150px;
+  width        : 100%;
+  position     : fixed;
+  top          : 0;
+  background   : #fff;
+}
+
+.wrapper{
+  height         : 100%;
+  width          : 90%;
+  max-width      : 1200px;
+  margin         : 0 auto;
+  display        : flex;
+  justify-content: center;
+  align-items    : center ;
+}
+
+.nav{
+  width     : 100%;
+  position  : fixed;
+  bottom    : 0;
+  background: #000;
+}
+
+.menu{
+  display   : flex;
+  list-style: none;
+}
+
+.menu2{
+  display: none;
+}
+
+.item {
+  width: 33%;
+}
+
+.item:first-child{
+  border-right: 2px solid #fff;
+}
+
+.item:last-child{
+  border-left: 2px solid #fff;   
+}
+
+.link{
+  display        : block;
+  color          : #fff;
+  font-size      : 15px;
+  font-family    : "Raleway", sans-serif;
+  text-align     : center;
+  text-decoration: none;
+  padding        : 5px;
+}
+
+.fa{
+  font-size:20px;
+  margin:4px;
+}
+
+/*redes sociales*/
+.social{
+  width:50px;
+  height:120px;
+  position:fixed;
+  right:0;
+  top:40%;
+  color:#fff;
+  background:transparent;
+  display: grid;
+  justify-content:center;
+  align-items:center;
+  z-index:2000;
+}
+
+.facebook, .waa, .instagram{
+  background:#000;
+  border-radius:50%;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+}
+
+.fa-facebook, .fa-whatsapp, .fa-instagram{
+  font-size:40px;
+}
+
+.insta, .wapp{
+  text-decoration:none;
+  color:#fff;
+}
+
+/*pie de pagina*/
+footer{
+  display:block;
+  height:130px;
+  background:#000;
+  color:#fff;
+  text-align:center;
+}
+
+.frase{
+  text-transform: uppercase;
+  font-size:14px;
+  padding-top:15px;
+}
+
+.tel, .correo{
+  text-decoration:none;
+  color:#fff;
+  padding-top: 25px;
+}
+
+.tel{
+  padding-bottom: 40px;
+}
+
+/*principal*/
+main{
+  display: block;
+}
+
+.contenedor{
+  margin:auto;
+  padding: 40px 0 40px 0;
+  width: 90%;
+  max-width: 1000px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.contenedor h2{
+  font-size: 30px;
+  color: #000;
+  margin-bottom: 8px;
+}
+
+.contenedor h4{
+  font-size: 22px;
+  color: #000;
+  margin: 15px;
+}
+
+.contenedor p{
+  margin-bottom: 40px;
+  font-size: 20px;
+}
+
+/*seccion 1*/
+.after::after{
+  content:'';
+  display: block;
+  margin: auto;
+  margin-top: var(--espacios);
+  width: 100px;
+  height: 2px;
+  background: var(--color1);
+  margin-bottom: var(--espacios-contenido);
+}
+
+.card{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-bottom: 40px;
+}
+
+.content-card{
+  width: 31%;
+  box-shadow: 0 0 6px 0 rgba(0,0,0,.5);
+  overflow: hidden;
+  height:350px;
+}
+
+.people{
+  height: 80%;
+}
+
+.content-card img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.texto-team{
+  height: 20%;
+  width: 100%;
+  padding: var(--espacios) 0;
+}
+
+.texto-team h2{
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+/*seccion 2*/
+.video{
+  height: 500px;
+  background-image: url("img/video-caja.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: block;
+  text-align: center;
+}
+.video iframe{
+  height: 250px;
+  width: 85%;
+  margin: 70px 0 30px 0;
+}
+.video-caja2{
+  background-color:#ffffffb3;
+  display: block; 
+}
+.video h3{
+  font-family: 'Dancing Script', cursive;
+  font-size: 30px;
+  margin: 20px 0 30px 0;
+}
+
+/*seccion 3*/
+
+.testimonio{
+  height: 550px;
+  display: block;
+  text-align: center;
+}
+
+.imagen img{
+  height: 350px;
+  padding: 20px 0;
+}
+
+.sobremi{
+  background: #ffcc55;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  padding: 10px 0;
+}
+
+.frase2{
+  height: 100px;
+  background: pink;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: static;
+}
+
+.frase2 img{
+  height: 90px;
+  display: inline-block;
+  position: relative;
+  top: 40px;
+  right: 0;
+  padding-right: 10px;
+  margin-left: 20px; 
+}
+
+.frase2 p{
+  margin-left: 15px;
+}
+
+@media screen and (max-width: 700px){
+  .content-card{
+  width: 48%;
+  margin-bottom:20px;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .cabecera-caja{
+  height: 20%;
+  }
+
+  .content-card{
+  width: 90%;
+  }
+}
+
+@media screen and (min-width: 500px){
+/*redes sociales*/
+
+  .facebook, .waa, .instagram{
+  background:#000;
+  border-radius:50%;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  }
+
+  .fa-facebook-f:before, .fa-facebook:before {
+    font-size: 25px;
+  }
+  .fa-instagram:before {
+    font-size: 25px;
+  }
+  .fa-whatsapp:before {
+    font-size: 25px;
+  }
+}
+
+@media screen and (min-width: 700px){
+/*menu 2*/
+
+  .menu{
+    display: none;
+  }
+
+  .logo{
+  height: 36px;
+  background-color: #000;
+  display: flex;
+  }
+
+  .logo img {
+  height: 120px;
+  position:static;
+  }
+
+  .menu2{
+    display: flex;
+    width: 350px;
+    right: 0;
+    position: absolute;
+    list-style: none;
+  }
+
+  .item:first-child{
+  border-right: none;
+  }
+
+  .item:last-child{
+  border-left: none;  
+  }
+/*seccion 2*/
+  .video{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 430px;
+  width: 100%;
+  }
+
+  .video iframe{
+  height: 300px;
+  width: 450px;
+  margin: 70px 0 30px 0;
+  }
+
+  .video-caja2{
+  background-color:#ffffffb3;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 15%;
+  }
+  
+  .video h3{
+  font-size: 40px;
+  margin: 0 30px 0 30px;
+  }
+
+  .frase{
+  font-size:18px;
+  }
+
+}
