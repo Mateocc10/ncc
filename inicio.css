@@ -18,7 +18,7 @@
 }
 
 .cabecera{
-  height: 500px;
+  height: 550px;
   background-image: url("img/cabecera.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -103,6 +103,10 @@ h1{
   text-decoration: none;
   padding        : 5px;
 }
+.link:hover{
+  transform: scale(1.1);
+  color: yellow;
+}
 
 .fa{
   font-size:20px;
@@ -139,6 +143,11 @@ h1{
 .insta, .wapp{
   text-decoration:none;
   color:#fff;
+}
+
+.facebook:hover, .waa:hover , .instagram:hover {
+  transform: scale(1.2);
+  background: yellow;
 }
 
 /*pie de pagina*/
@@ -273,23 +282,28 @@ main{
 /*seccion 3*/
 
 .testimonio{
-  height: 550px;
+  height: 530px;
   display: block;
   text-align: center;
 }
 
 .imagen img{
-  height: 350px;
-  padding: 20px 0;
+  height: 320px;
+  padding: 20px 0 10px 0;
 }
 
 .sobremi{
   background: #ffcc55;
-  display: inline-flex;
+  display: inline-block;
   align-items: center;
   justify-content: center;
   width: 50%;
-  padding: 10px 0;
+  margin: 30px 0 15px 0; 
+}
+
+.sobremi h3{
+  font-family: 'Dancing Script', cursive;
+  font-size: 30px;
 }
 
 .frase2{
@@ -302,17 +316,16 @@ main{
 }
 
 .frase2 img{
-  height: 90px;
-  display: inline-block;
-  position: relative;
-  top: 40px;
-  right: 0;
+  height: 110px;
+  display: flex;
+  float: right;
+  clear: left;
   padding-right: 10px;
   margin-left: 20px; 
 }
 
 .frase2 p{
-  margin-left: 15px;
+  margin-left: 10px;
 }
 
 @media screen and (max-width: 700px){
@@ -399,7 +412,7 @@ main{
   .video iframe{
   height: 300px;
   width: 450px;
-  margin: 70px 0 30px 0;
+  margin: 70px 0 30px 10px;
   }
 
   .video-caja2{
@@ -407,7 +420,7 @@ main{
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  height: 15%;
+  height: 20%;
   }
   
   .video h3{
@@ -419,4 +432,51 @@ main{
   font-size:18px;
   }
 
+  /*seccion 3*/
+  .testimonio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+  }
+  
+  .imagen{
+    padding-left: 20px;
+    padding-right: 25px;
+  }
+
+  .imagen img{
+    height: 450px;
+  }
+
+  .sobremi{
+    position: relative;
+    top: -110px;
+    left: 80px;
+    width: 420px;
+    height: 90px;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .sobremi h3{
+    font-size: 40px;
+  }
+
+  .frase2{
+    width: 1000px;
+    height: 40%;
+    text-align: center;
+  }
+  
+  .frase2 p{
+    font-size: 20px;
+  }
+  .frase2 img{
+    display: inline-flex;
+    position: relative;
+    left: 0;
+    top: 70px;
+    height: 120px;
+  }
 }
