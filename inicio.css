@@ -15,6 +15,7 @@
 .logo img {
   height: 100px;
   position:static;
+  margin-left: 10px;
 }
 
 .cabecera{
@@ -105,7 +106,7 @@ h1{
 }
 .link:hover{
   transform: scale(1.1);
-  color: yellow;
+  color: #ffff65;
 }
 
 .fa{
@@ -147,7 +148,7 @@ h1{
 
 .facebook:hover, .waa:hover , .instagram:hover {
   transform: scale(1.2);
-  background: yellow;
+  background: #ffff65;
 }
 
 /*pie de pagina*/
@@ -293,7 +294,7 @@ main{
 }
 
 .sobremi{
-  background: #ffcc55;
+  background: #ffff65;
   display: inline-block;
   align-items: center;
   justify-content: center;
@@ -308,7 +309,7 @@ main{
 
 .frase2{
   height: 100px;
-  background: pink;
+  background: #b5fcf0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -391,6 +392,7 @@ main{
     right: 0;
     position: absolute;
     list-style: none;
+    margin-right: 10px;
   }
 
   .item:first-child{
