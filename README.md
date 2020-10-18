@@ -1,1 +1,3 @@
-Primer repositorio
+### NCC gastronomy
+
+- ejemplo de como cambiar el readme
