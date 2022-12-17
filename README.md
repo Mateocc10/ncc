@@ -1,3 +1,3 @@
 ### NCC gastronomy
 
-- ejemplo de como cambiar el readme
+Pagina web de una chef
